@@ -1,8 +1,19 @@
 {
   "routes": [
     {
+      "src": "/dex/(.*)",
+      "dest": "http://182.44.1.58:4181/dex/$1"
+    },
+    {
+      "src": "/favicon/(.*)",
+      "dest": "/favicon/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "http://182.44.1.58:4181/$1"
+      "dest": "/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     }
   ]
 }
