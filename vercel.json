@@ -2,11 +2,13 @@
   "routes": [
     {
       "src": "/dex/(.*)",
-      "dest": "http://182.44.1.58:4181/dex/$1"
+      "dest": "http://182.44.1.58:4181/dex/$1",
+      "continueOnTimeout": true
     },
     {
       "src": "/favicon/(.*)",
-      "dest": "http://182.44.1.58:4181/favicon/$1" 
+      "dest": "http://182.44.1.58:4181/favicon/$1" ,
+      "continueOnTimeout": true
     },
     {
       "src": "/(.*)",
