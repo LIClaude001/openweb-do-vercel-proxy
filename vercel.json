@@ -6,8 +6,7 @@
     },
     {
       "src": "/favicon/(.*)",
-      "dest": "http://182.44.1.58:4181/favicon/$1",
-      "continueOnTimeout": true
+      "dest": "http://182.44.1.58:4181/favicon/$1"
     },
     {
       "src": "/(.*)",
